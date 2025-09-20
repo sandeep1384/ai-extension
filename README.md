@@ -37,7 +37,7 @@ ai-script-generator-extension/
 ⚡ Installation
 
 1. Clone this repository:
-git clone https://github.com/<your-username>/ai-script-generator-extension.git
+git clone https://github.com/sandeep1384/ai-extension.git
 
 2. Open Google Chrome and navigate to:
    chrome://extensions/
