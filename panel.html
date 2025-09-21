@@ -86,6 +86,26 @@
           </div>
         </div>
       </div>
+
+      <!-- Test Data Generator Panel -->
+      <div class="testdata-panel" style="border-top:1px solid var(--border-color); padding:12px; margin-top:8px;">
+        <h4 style="margin:0 0 8px 0;">Checkbox Test Data Generator</h4>
+        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+          <input id="td-name" placeholder="field name (e.g. interests)" style="flex:1; min-width:160px;" />
+          <input id="td-inspected" type="number" min="1" value="4" style="width:80px;" title="inspectedCount" />
+          <input id="td-selected" type="number" min="0" value="2" style="width:80px;" title="selectedCount" />
+          <input id="td-records" type="number" min="1" value="5" style="width:80px;" title="records" />
+          <button id="td-use-inspect" class="inspector-toggle" title="Populate from inspected DOM">Use Inspection</button>
+          <button id="td-generate" class="inspector-toggle">Generate</button>
+        </div>
+
+        <div id="td-output" style="margin-top:12px; max-height:220px; overflow:auto; font-size:12px; background:var(--panel-bg); padding:8px; border-radius:4px;">
+          <em>Generated CSV/table will appear here...</em>
+        </div>
+        <div id="td-field-chooser" style="margin-top:12px; max-height:160px; overflow:auto; font-size:12px; background:var(--panel-bg); padding:8px; border-radius:4px; display:none;">
+          <em>No fields selected yet. Click "Use Inspection" to detect fields.</em>
+        </div>
+      </div>
     </div>
 
     <!-- Settings Tab -->
@@ -160,6 +180,7 @@
   <script src="src/scripts/chat.js" type="module"></script>
   <script src="src/scripts/api/openai-api.js"></script>
   <script src="src/scripts/api/testleaf-api.js"></script>
+  <script src="src/scripts/test-data/ui-checkbox.js" type="module"></script>
 
 </body>
 </html>
